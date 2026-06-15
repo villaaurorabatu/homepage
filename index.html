@@ -726,7 +726,7 @@
                                 <h4 class="text-2xl font-serif font-bold text-warm-800 mt-3">Tarif Weekday</h4>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold text-warm-800">Rp 899.000 <span class="text-xs text-warm-500 font-normal">/ malam</span></p>
+                                <p class="text-xl font-bold text-warm-800">Rp 649.000 <span class="text-xs text-warm-500 font-normal">/ malam</span></p>
                             </div>
                         </div>
                         <p class="text-xs text-warm-600">Berlaku untuk check-in pada hari Senin, Selasa, Rabu, Kamis, dan Minggu. Cocok untuk suasana staycation yang lebih tenang.</p>
@@ -755,7 +755,7 @@
                                 <h4 class="text-2xl font-serif font-bold text-warm-800 mt-3">Tarif Weekend</h4>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold text-warm-800">Rp 1.099.000 <span class="text-xs text-warm-500 font-normal">/ malam</span></p>
+                                <p class="text-xl font-bold text-warm-800">Rp 699.000 <span class="text-xs text-warm-500 font-normal">/ malam</span></p>
                             </div>
                         </div>
                         <p class="text-xs text-warm-600">Berlaku untuk check-in di hari Jumat dan Sabtu. Waktu terbaik untuk mengumpulkan seluruh keluarga di sela libur akhir pekan.</p>
@@ -943,8 +943,8 @@
                         <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl text-xs text-amber-800 space-y-1">
                             <p class="font-bold"><i class="fa-solid fa-bell"></i> Aturan Tarif Villa:</p>
                             <ul class="list-disc pl-4 space-y-1 mt-1">
-                                <li>Weekday (Senin - Kamis, Minggu): <strong>Rp 899.000 / malam</strong></li>
-                                <li>Weekend (Jumat, Sabtu): <strong>Rp 1.099.000 / malam</strong></li>
+                                <li>Weekday (Senin - Kamis, Minggu): <strong>Rp 649.000 / malam</strong></li>
+                                <li>Weekend (Jumat, Sabtu): <strong>Rp 699.000 / malam</strong></li>
                                 <li>Menginap ≥ 3 Malam: <strong>Dapat Diskon Langsung 20%</strong></li>
                             </ul>
                         </div>
@@ -1435,10 +1435,10 @@
                         const dayOfWeek = tempDate.getDay(); // 0: Minggu, 1: Senin, ..., 5: Jumat, 6: Sabtu
                         // Jumat (5) dan Sabtu (6) adalah weekend rates
                         if (dayOfWeek === 5 || dayOfWeek === 6) {
-                            originalSum += 1099000;
+                            originalSum += 699000;
                             weekendsCount++;
                         } else {
-                            originalSum += 899000;
+                            originalSum += 649000;
                             weekdaysCount++;
                         }
                         tempDate.setDate(tempDate.getDate() + 1);
@@ -1470,8 +1470,8 @@
                 priceBreakdown.classList.remove('hidden');
                 let breakDownHTML = `
                     <p class="font-bold border-b border-warm-800 pb-1 mb-1 text-[10px] uppercase text-ambergold">Rincian Hari:</p>
-                    <p>• Weekday: ${weekdaysCount} malam x Rp 899.000</p>
-                    <p>• Weekend: ${weekendsCount} malam x Rp 1.099.000</p>
+                    <p>• Weekday: ${weekdaysCount} malam x Rp 649.000</p>
+                    <p>• Weekend: ${weekendsCount} malam x Rp 699.000</p>
                 `;
 
                 if (diffDays >= 3) {
